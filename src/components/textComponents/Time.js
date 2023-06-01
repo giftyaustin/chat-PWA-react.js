@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Time = () => {
+const Time = ({date, month}) => {
   return (
     <div className="time-h">
     <div className="line"></div>
-    <div className="time">12 jan 2023</div>
+    <div className="time">{month} {date}</div>
     <div className="line"></div>
    
   </div>

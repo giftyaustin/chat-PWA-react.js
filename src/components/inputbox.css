@@ -1,11 +1,12 @@
 /* .InputBox{
-   padding-left: 10px;
+   position: relative;
    
 } */
 .inputbox-h{
     justify-content: center;
     /* padding: 0 20px 0 20px; */
     position: relative;
+   
     /* padding: 1%; */
     
     /* bottom:10%; */
@@ -22,40 +23,78 @@
 }
 .attachment-btn{
     position: relative;
-    right: px;
+    width: 30px;
+    height:30px;
     background-color: transparent;
     border:0;
-    font-size: 25px;
+    object-fit: contain;
+}
+.paperclip-icon{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
 }
 .text-inp{
     padding-left: 10px;
-    min-width: 200px;
-    width: 270px;
+    border: 1px solid red;
+    width: 90%;
     height: 50px;
-    border: 0;
+    /* border: 0; */
     outline: none;
     background-color: transparent;
 }
 
 @media  screen and (max-width:350px) {
-    *{
-        background-color: aquamarine;
-    }
+    
     .text-inp{
-        width: 50px;
+        width: 70%;
+    }
+    .GroupName{
+        height: 55px;
+    }
+    .FromTo{
+        height: 60px;
+    }
+    .MessageBox{
+        height: 60%;
     }
 }
 
-.send-btn{
-   
+
+@media  screen and (max-width:240px) {
+    
+    .text-inp{
+        width: 50%;
+    }
+    .GroupName{
+        height: 50px;
+    }
+    .FromTo{
+        height: 50px;
+    }
+    .MessageBox{
+        height: 50%;
+    }
+}
+
+.send-btn-h{
+   object-fit: contain;
     right: 10px;
     border: 0;
     background-color: transparent;
-    font-size: 38px;
+    height: 35px;
+    width: 35px;
+}
+.send-btn{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
 }
 
 .atch-send-h{
     /* margin-left: 5px; */
     justify-content: flex-end;
-    width: 100%;
+    align-items: center;
+    width: 30%;
+    padding-right: 10px;
 }
