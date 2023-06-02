@@ -36,10 +36,10 @@
 }
 .text-inp{
     padding-left: 10px;
-    border: 1px solid red;
+  
     width: 90%;
     height: 50px;
-    /* border: 0; */
+  border: 0;
     outline: none;
     background-color: transparent;
 }
@@ -74,6 +74,21 @@
     }
     .MessageBox{
         height: 50%;
+    }
+}
+@media  screen and (max-height:700px) {
+    
+    .text-inp{
+        height: 40px;
+    }
+    .GroupName{
+        height: 40px;
+    }
+    .FromTo{
+        height: 60px;
+    }
+    .MessageBox{
+        height: 65%;
     }
 }
 
